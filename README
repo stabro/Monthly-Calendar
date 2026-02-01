@@ -1,0 +1,27 @@
+# Month Calendar Card
+
+A Google-like month calendar view for Home Assistant.
+
+## Features
+- Month view with ISO week numbers
+- Previous / Next / Today navigation
+- Multiple calendar entities
+- Color + icon or image per calendar
+- All-day and timed events
+- Day cells grow when many events exist
+
+## Installation (manual)
+1. Download `month-calendar-card.js`
+2. Copy to `/config/www/`
+3. Add as Lovelace resource:
+   - URL: `/local/month-calendar-card.js`
+   - Type: `module`
+
+## Usage example
+
+```yaml
+type: custom:month-calendar-card
+calendars:
+  - entity: calendar.felix
+    color: "#4e8a8e"
+    icon: mdi:soccer
